@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Life in Pixels</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+
+        <h1>🌅 Life in Pixels</h1>
+
+        <p>Every memory deserves a pixel.</p>
+
+        <button id="addMemoryBtn">
+            + Add Memory
+        </button>
+
+    </header>
+
+
+    <!-- STATS -->
+
+    <section class="stats">
+
+        <div class="stat-card">
+
+            <h3>😊 Happy Days</h3>
+
+            <p id="happyCount">0</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h3>📚 Memories</h3>
+
+            <p id="memoryCount">0</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h3>🔥 Current Streak</h3>
+
+            <p>0 Days</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- MEMORY FORM -->
+
+    <section class="memory-form">
+
+        <h2>Add a Memory</h2>
+
+        <form id="memoryForm">
+
+            <input
+                type="text"
+                id="title"
+                placeholder="Memory Title"
+                required
+            >
+
+            <textarea
+                id="description"
+                placeholder="Write about today..."
+                required
+            ></textarea>
+
+            <select id="mood">
+
+                <option value="">Select Mood</option>
+
+                <option>😊 Happy</option>
+
+                <option>😎 Productive</option>
+
+                <option>😍 Excited</option>
+
+                <option>😴 Tired</option>
+
+                <option>😢 Sad</option>
+
+                <option>😌 Calm</option>
+
+            </select>
+
+            <input
+                type="text"
+                id="tags"
+                placeholder="coding, college, friends"
+            >
+
+            <input
+                type="date"
+                id="date"
+                required
+            >
+
+            <button type="submit">
+
+                Save Memory
+
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- RECENT MEMORIES -->
+
+    <section class="memories">
+
+        <h2>Recent Memories</h2>
+
+        <div id="memoryContainer">
+
+            <!-- Cards will appear here -->
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
