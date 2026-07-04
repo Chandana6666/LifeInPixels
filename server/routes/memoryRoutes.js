@@ -1,11 +1,17 @@
 const express = require("express");
-const router = express.Router();
-const controller = require("../controllers/memoryController");
-console.log(controller);
-const { createMemory } = (controller)
 
-//const { createMemory } = controller;
-//const { createMemory } = require("..//controllers/memoryController");
+const router = express.Router();
+
+const {
+    createMemory,
+    getMemories,
+    deleteMemory
+} = require("../controllers/memoryController");
 
 router.post("/", createMemory);
+
+router.get("/", getMemories);
+
+router.delete("/:id", deleteMemory);
+
 module.exports = router;
