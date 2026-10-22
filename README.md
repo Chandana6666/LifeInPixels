@@ -2,6 +2,10 @@
 
 A full-stack journal and mood tracking web application where users can capture daily memories, track emotions, and build a personal timeline of meaningful moments.
 
+It also includes an AI-powered title generator that suggests a title based on your journal entry using the Google Gemini API.
+
+
+
 ---
 
 ## ✨ Features
@@ -10,6 +14,7 @@ A full-stack journal and mood tracking web application where users can capture d
 - 😊 Track moods with emoji-based categories
 - 🏷️ Add tags to organize memories
 - 📅 Record memories by date
+-  Generate meaningful journal titles using AI.
 - 📚 View recent memories (latest first)
 - 📊 Dashboard showing:
   - Total memories
@@ -35,6 +40,8 @@ A full-stack journal and mood tracking web application where users can capture d
 - MongoDB Atlas
 - Mongoose
 
+###AI Integration
+- Google Gemini API
 ---
 
 ## 📂 Project Structure
@@ -115,7 +122,15 @@ The application allows users to:
 - Track personal journaling activity
 
 ---
+**What I Learned
+**
+Building Life in Pixels helped me understand how a frontend communicates with a backend, how REST APIs handle data, and how MongoDB stores application data. Integrating Gemini also gave me hands-on experience connecting an AI model to a real application.
 
+Future Improvements
+
+- Edit existing memories.
+- Add memory search and filtering.
+- Explore more AI-powered journaling features.
 ## 👩‍💻 Author
 
 **Chandana**
