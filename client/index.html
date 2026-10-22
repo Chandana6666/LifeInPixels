@@ -68,66 +68,63 @@
     </section>
 
 
-    <!-- MEMORY FORM -->
+    
+<!-- MEMORY FORM -->
 
-    <section class="memory-form">
+<section class="memory-form">
 
-        <h2>Add a Memory</h2>
+    <h2>Add a Memory</h2>
 
-        <form id="memoryForm">
+    <form id="memoryForm">
 
-            <input
-                type="text"
-                id="title"
-                placeholder="Memory Title"
-                required
-            >
+        <input
+            type="text"
+            id="title"
+            placeholder="Memory Title"
+            required
+        >
 
-            <textarea
-                id="description"
-                placeholder="Write about today..."
-                required
-            ></textarea>
+        <textarea
+            id="description"
+            placeholder="Write about today..."
+            required
+        ></textarea>
 
-            <select id="mood">
+        <!-- NEW AI BUTTON -->
+        <button type="button" id="generateTitleBtn">
+            ✨ Generate Title with AI
+        </button>
 
-                <option value="">Select Mood</option>
+        <select id="mood">
+            <option value="">Select Mood</option>
+            <option>😊 Happy</option>
+            <option>😎 Productive</option>
+            <option>😍 Excited</option>
+            <option>😴 Tired</option>
+            <option>😢 Sad</option>
+            <option>😌 Calm</option>
+        </select>
 
-                <option>😊 Happy</option>
+        <input
+            type="text"
+            id="tags"
+            placeholder="coding, college, friends"
+        >
 
-                <option>😎 Productive</option>
+        <input
+            type="date"
+            id="date"
+            required
+        >
 
-                <option>😍 Excited</option>
+        <button type="submit">
+            Save Memory
+        </button>
 
-                <option>😴 Tired</option>
+    </form>
 
-                <option>😢 Sad</option>
+</section>
 
-                <option>😌 Calm</option>
-
-            </select>
-
-            <input
-                type="text"
-                id="tags"
-                placeholder="coding, college, friends"
-            >
-
-            <input
-                type="date"
-                id="date"
-                required
-            >
-
-            <button type="submit">
-
-                Save Memory
-
-            </button>
-
-        </form>
-
-    </section>
 
 
     <!-- RECENT MEMORIES -->
